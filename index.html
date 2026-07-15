@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CargoScope | Ocean Container Tracking</title>
+  <meta name="description" content="CargoScope helps freight teams track ocean containers across 100+ carriers with clear shipment milestones, ETA visibility, and rail and inland context.">
+  <meta name="robots" content="index, follow">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #07111f;
+      --panel: rgba(15, 31, 52, 0.82);
+      --text: #f4f8ff;
+      --muted: #a7b8cc;
+      --accent: #47d7c8;
+      --line: rgba(153, 180, 211, 0.18);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 32px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 20% 10%, rgba(49, 111, 166, 0.28), transparent 34rem),
+        radial-gradient(circle at 80% 90%, rgba(34, 167, 148, 0.2), transparent 30rem),
+        var(--bg);
+    }
+
+    main {
+      width: min(760px, 100%);
+      padding: clamp(32px, 7vw, 72px);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: var(--panel);
+      box-shadow: 0 30px 90px rgba(0, 0, 0, 0.32);
+      backdrop-filter: blur(16px);
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--accent);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.15em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .brand::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 22px rgba(71, 215, 200, 0.7);
+    }
+
+    h1 {
+      max-width: 650px;
+      margin: 28px 0 20px;
+      font-size: clamp(2.6rem, 8vw, 5.4rem);
+      line-height: 0.98;
+      letter-spacing: -0.055em;
+    }
+
+    p {
+      max-width: 620px;
+      margin: 0;
+      color: var(--muted);
+      font-size: clamp(1rem, 2.2vw, 1.2rem);
+      line-height: 1.7;
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 34px;
+      padding: 14px 20px;
+      border-radius: 999px;
+      color: #04201c;
+      background: var(--accent);
+      font-weight: 800;
+      text-decoration: none;
+      transition: transform 160ms ease, box-shadow 160ms ease;
+    }
+
+    .cta:hover,
+    .cta:focus-visible {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 34px rgba(71, 215, 200, 0.22);
+    }
+
+    .note {
+      margin-top: 26px;
+      font-size: 0.82rem;
+      color: #7f93aa;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="brand" href="https://cargoscope.io/">CargoScope</a>
+    <h1>Ocean container tracking, made clear.</h1>
+    <p>
+      CargoScope gives freight teams shipment visibility across 100+ ocean carriers,
+      including ETA and milestone changes, rail and inland context, and shareable tracking pages.
+    </p>
+    <a class="cta" href="https://cargoscope.io/">
+      Visit the official CargoScope website <span aria-hidden="true">→</span>
+    </a>
+    <p class="note">Official product information and tracking tools are available at cargoscope.io.</p>
+  </main>
+</body>
+</html>
